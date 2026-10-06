@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apcaw"
+version = "1.0.0"
+description = "Reference implementation of APC audio watermarking (apcaw-v1)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "BSD-2-Clause" }
+authors = [{ name = "Guang Yang", email = "guangyang19@ucla.edu" }]
+dependencies = [
+    "numpy>=1.24",
+    "cryptography>=41",
+    "reedsolo>=1.7",
+]
+
+[project.optional-dependencies]
+cli = ["soundfile"]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://gy19a.github.io/asymmetric-phase-coding-audio-watermarking-js/"
+Source = "https://github.com/GY19A/asymmetric-phase-coding-audio-watermarking"
+
+[project.scripts]
+apcaw = "apcaw.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+apcaw = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: long-running (resync search, codecs)",
+]

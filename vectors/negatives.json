@@ -1,0 +1,37 @@
+{
+ "description": "must not verify; counters of the v1 verifier (profile auto: wb then nb, global de-duplication of candidate byte strings)",
+ "cases": [
+  {
+   "file": "clip_A_signed_v1.wav",
+   "case": "wrong key",
+   "public_key_hex": "79b5562e8fe654f94078b112e8a98ba7901f853ae695bed7e0e3910bad049664",
+   "verified": false,
+   "message_hex": null,
+   "channel": null,
+   "profile": null,
+   "path": null,
+   "rs_corrected": null,
+   "payload_bits": null,
+   "candidates_tried": 460,
+   "rs_passes": 0,
+   "sig_checks": 0,
+   "reason": "no candidate passed RS decoding (460 tried)"
+  },
+  {
+   "file": "clip_A.wav",
+   "case": "unsigned audio",
+   "public_key_hex": "03a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b8",
+   "verified": false,
+   "message_hex": null,
+   "channel": null,
+   "profile": null,
+   "path": null,
+   "rs_corrected": null,
+   "payload_bits": null,
+   "candidates_tried": 460,
+   "rs_passes": 62,
+   "sig_checks": 1,
+   "reason": "signature invalid (1 candidate(s) passed RS with a consistent length; none verified under this public key)"
+  }
+ ]
+}

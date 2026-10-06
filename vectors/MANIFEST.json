@@ -1,0 +1,65 @@
+{
+ "format": "apcaw-v1 conformance vectors",
+ "generator": "tools/make_vectors.py",
+ "clip_A_source": "LibriSpeech test-clean 8555-284447-0010 (Panayotov et al. 2015, CC BY 4.0)",
+ "apcaw": "1.0.0",
+ "python": "3.12.2",
+ "numpy": "2.5.3",
+ "reedsolo": "1.7.0",
+ "cryptography": "50.0.1",
+ "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+ "files": {
+  "README.md": {
+   "sha256": "d8787d8f0ecc6363a099f1802a3a41bf9dec5f2b6e9b8504e5373dba7b6cb293",
+   "bytes": 3086
+  },
+  "clip_A.wav": {
+   "sha256": "68ae814ef20a571b37843bd5501f5bdf1b25da80f5d64bb8c9afc9cac9adc219",
+   "bytes": 882044
+  },
+  "clip_A_signed_legacy.wav": {
+   "sha256": "9e8945bcb40e6ac266736bfbe918d6e6415595f3f8aa5fb22296b9fe02523ca9",
+   "bytes": 882044
+  },
+  "clip_A_signed_v1.f64": {
+   "sha256": "624c32a35873c1e0cd416bf99a8973ce6e76a76adf0d882e2e7c5f507643a546",
+   "bytes": 3528000
+  },
+  "clip_A_signed_v1.npy": {
+   "sha256": "a1e07829bce9406a13067de91cc2624661e10684cdc3a8db382a87e26c57dc7a",
+   "bytes": 3528128
+  },
+  "clip_A_signed_v1.wav": {
+   "sha256": "5f066cb38a79026d054971c3b36670416399e1e8970d93efc3d1f9944391beeb",
+   "bytes": 882044
+  },
+  "clip_A_signed_v1_mp3.wav": {
+   "sha256": "9b3a74615c5ae7ca873879897385c90291d83aa78d1be3e10eefaba2b700addd",
+   "bytes": 882044
+  },
+  "layout.json": {
+   "sha256": "ae3958643f18292ba0866e2abd234cf49c7c5a632b3dbcffdecdc7a01f7b9c85",
+   "bytes": 59363
+  },
+  "mt19937.json": {
+   "sha256": "d2c51d169b69fdecc5fbc496451b3c2bcc9ecf022e8343de5f558693fce6a178",
+   "bytes": 1619
+  },
+  "negatives.json": {
+   "sha256": "e39867aceeea81f0b8c2a9b780eaf5c128b32c90b56954c510d6f8b257c4caad",
+   "bytes": 1089
+  },
+  "payload.json": {
+   "sha256": "c91790ac4a261f0046f0e2747a992fbf40fc40bc568d95e75f52ddbb718d6e4e",
+   "bytes": 8008
+  },
+  "rs.json": {
+   "sha256": "87277b6122d11b69c3aeb376ac93d1f14648242351768cdbe577c211afafa318",
+   "bytes": 21800
+  },
+  "soft_A.json": {
+   "sha256": "99f1191b22f28499d913e6cebb8014c1c6d512abe0e0d5f4a1038e98f09122e6",
+   "bytes": 577308
+  }
+ }
+}
