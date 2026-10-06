@@ -77,7 +77,7 @@ def test_signed_audio_reproduces():
     x, sr = read_audio(VECTORS / "clip_A.wav")
     y = sign(x, sr, sk, "NIPS2026: Authenticity Token for Deepfake Defense")
     ref = np.fromfile(VECTORS / "clip_A_signed_v1.f64", dtype="<f8")
-    assert np.array_equal(y, ref)                          # same implementation: bit-identical
+    np.testing.assert_allclose(y, ref, atol=1e-9, rtol=0)  # format §11; bit-identical on one machine
     assert np.array_equal(np.load(VECTORS / "clip_A_signed_v1.npy"), ref)
     w, _ = read_audio(VECTORS / "clip_A_signed_v1.wav")
     assert np.array_equal(w, np.round(np.clip(ref, -1, 32767 / 32768) * 32768) / 32768)
