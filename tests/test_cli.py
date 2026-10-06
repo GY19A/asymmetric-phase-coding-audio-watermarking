@@ -12,7 +12,7 @@ import pytest
 
 from conftest import CLIP_NAMES, DATA_DIR, NIPS_MSG, ROOT, write_pcm16
 
-APCAW = ROOT / ".venv" / "bin" / "apcaw"
+APCAW = pathlib.Path(sys.executable).parent / "apcaw"
 RUNNERS = {"script": [str(APCAW)], "module": [sys.executable, "-m", "apcaw"]}
 
 
